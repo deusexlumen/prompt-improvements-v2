@@ -1,229 +1,180 @@
-# Prompt Improvements v2.0
+# Gemini Gems Prompt Sammlung
 
-## Verbesserte Versionen der Top 5 Gemini Gems Prompts
+## Übersicht
 
-> *"Ein guter Prompt ist wie ein guter Vertrag: Keine Interpretationsspielräume."*
+**38 System Prompts** aus dem Google Gemini Takeout, analysiert, kategorisiert und bereinigt.
 
----
-
-## 📊 Übersicht
-
-| # | Prompt | Original | Improved | Delta |
-|---|--------|----------|----------|-------|
-| 01 | Senior System Auditor | 7.5/10 | **9.1/10** | +1.6 |
-| 02 | Knowledge Graph Engineer | 7.8/10 | **9.3/10** | +1.5 |
-| 03 | Meta-Workflow-Architect | 7.2/10 | **9.0/10** | +1.8 |
-| 04 | Forensic Analyst | 7.9/10 | **9.2/10** | +1.3 |
-| 05 | RP-Architect | 7.5/10 | **8.8/10** | +1.3 |
-| **Ø** | | **7.58/10** | **9.08/10** | **+1.5** |
+**4 gelöscht** (Duplikate)  
+**38 verbleibend** (alle einzeln analysiert)
 
 ---
 
-## 📁 Inhalt
+## 📁 Ordnerstruktur
 
-### Die 5 verbesserten Prompts
-
-| Datei | Beschreibung | Haupt-Verbesserung |
-|-------|--------------|-------------------|
-| `01_senior_system_auditor_IMPROVED.md` | System-Auditor mit RAG | Confidence-Scoring P=0.0-1.0 |
-| `02_knowledge_graph_engineer_IMPROVED.md` | Knowledge Graph Builder | Query-Sprache mit 4 Operationen |
-| `03_meta_workflow_architect_IMPROVED.md` | Multi-Agent Designer | 4-stufige Skill-Validierung |
-| `04_forensic_analyst_IMPROVED.md` | Konflikt-Analyst | Objektivitäts-Metrik 0.0-1.0 |
-| `05_rp_architect_IMPROVED.md` | RP-Test-Designer | Quality-Formula mit 5 Metriken |
-
-### Dokumentation
-
-| Datei | Zweck |
-|-------|-------|
-| `COMPARISON_ORIGINAL_vs_IMPROVED.md` | Vorher/Nachher Vergleich aller 5 Prompts |
-| `README.md` | Diese Datei |
+```
+prompt-improvements-v2/
+├── prompts/                    ← DIE PROMPTS SELBST
+│   ├── 01-technik-architektur/     # System Design, Code, Architektur
+│   ├── 02-analyse-recherche/       # Forensik, Logik, Wahrheitsfindung
+│   ├── 03-kreativ-simulation/      # RP, Testing, Kreatives
+│   ├── 04-domain-spezialisten/     # Spezifische Domains (Musik, Bild, etc.)
+│   └── 05-persona-charaktere/      # Charakter-Prompts
+│
+├── analyse/                    ← ANALYSE-DOKUMENTE
+│   ├── SCHRITT_1_KATEGORISIERUNG.md
+│   ├── SCHRITT_2_BEWERTUNG.md
+│   ├── SCHRITT_3_EINZELANALYSE.md
+│   └── ...
+│
+└── README.md                   ← Diese Datei
+```
 
 ---
 
-## 🎯 Verbesserungs-Fokus
+## 🗂️ Die 5 Kategorien
 
-Alle 5 Prompts wurden in 3 Dimensionen verbessert:
+### 01 - Technik & Architektur (7 Prompts)
+**Für:** System Design, Code-Architektur, Wissensstrukturierung
 
-### 1. Quantifizierung
-- Confidence-Scores (P=0.0-1.0)
-- Quality-Metriken (S/A/B/C/D/F Tiers)
-- Objektivitäts-Index (0.0-1.0)
-- Evidence-Levels (1-5)
+| Prompt | Score | Kurzbeschreibung |
+|--------|-------|------------------|
+| [01] Senior System Auditor | 9.2/10 | RAG, Slow-Burn, Audit-Trail |
+| [02] Knowledge Graph Engineer | 9.1/10 | Ontologie, Evidence Levels |
+| [03] Meta-Workflow-Architect | 9.0/10 | Multi-Agent, Skill-Gen |
+| Elite Venture Architect | 8.2/10 | Full-Stack, Startup-Arch |
+| AGENTIC CODE ARCHITECT | 8.0/10 | Code-Architektur, SOLID |
+| Cloud-Native Skill Architect | 7.7/10 | Serverless, Managed |
+| Ｉｄｅａ (Idea-Architect) | 7.4/10 | Ideen → Payload |
 
-### 2. Automatisierung
-- Input-Validierung (Vollständigkeit, Klarheit, Machbarkeit)
-- Automatische Konsistenz-Checks
-- Error-Handling mit Fallbacks
-- Auto-Trigger für spezielle Modi
+📁 **Location:** `prompts/01-technik-architektur/`
 
-### 3. Vollständigkeit
-- Exit-Strategien (Natürlich/Forced/Abort)
-- Error-Protokolle
-- Versionierung
-- Archivierung
+---
+
+### 02 - Analyse & Recherche (5 Prompts)
+**Für:** Wahrheitsfindung, Forensik, Logik, Konfliktanalyse
+
+| Prompt | Score | Kurzbeschreibung |
+|--------|-------|------------------|
+| [04] Forensic Communications Analyst | 8.9/10 | Glasl, Schulz von Thun |
+| SYNTHETIC_EPISTEMOLOGIST | 8.5/10 | VALIDITY_MATRIX |
+| [ᾧ] Recursive Algorithmus | 8.5/10 | Deduktion/Induktion |
+| OCCAM'S RAZOR | 8.0/10 | Logik-Fehlersuche |
+| Ωʍɛɢඞ_V7.1_DEEP_LOGIC | 7.8/10 | Detail-Expansion |
+
+📁 **Location:** `prompts/02-analyse-recherche/`
+
+---
+
+### 03 - Kreativ & Simulation (2 Prompts)
+**Für:** RP-Testing, Charakter-Design, Stress-Tests
+
+| Prompt | Score | Kurzbeschreibung |
+|--------|-------|------------------|
+| [05] TEST RP | 8.8/10 | Stress-Test-Vektoren |
+| Unfiltered Roleplay | 7.6/10 | L1B3RT4S Method |
+
+📁 **Location:** `prompts/03-kreativ-simulation/`
+
+---
+
+### 04 - Domain Spezialisten (8 Prompts)
+**Für:** Spezifische Domains (Bild, Musik, Sprache, etc.)
+
+| Prompt | Score | Domain |
+|--------|-------|--------|
+| Cinematographer | 8.6/10 | Bildgenerierung |
+| Twitch-Dev-Architect | 8.2/10 | Twitch API |
+| music-hermeneutic-architect | 7.9/10 | Musikanalyse |
+| ＥＬ ¢h𝔦𝗰كᵒ | 7.1/10 | Argentinisches Spanisch |
+| KIEZ_DIALECT_TRANSFORMER | 7.1/10 | Berliner Slang |
+| TECH-GUIDE | 7.0/10 | Hardware-Preise |
+| MacGyver-Mentalität | 7.0/10 | DIY/IKEA-Manual |
+| Pelitiese | 7.2/10 | Konstruierte Sprache |
+
+📁 **Location:** `prompts/04-domain-spezialisten/`
+
+---
+
+### 05 - Persona & Charaktere (5 Prompts)
+**Für:** Konversationen mit spezifischem Charakter
+
+| Prompt | Score | Charakter |
+|--------|-------|-----------|
+| Chef | 7.5/10 | SUBJEKT_42 (genervte KI) |
+| 💊 REAL-TALK COMPANION | 7.4/10 | Direkter Gesprächspartner |
+| 🌒 Shadow Admin | 6.8/10 | System-Admin |
+| ĦYBRID HUSTLER | 6.7/10 | Entrepreneur |
+| Φ | ARCHITECT ZERO | 6.6/10 | Kinetic Sovereign |
+
+📁 **Location:** `prompts/05-persona-charaktere/`
+
+---
+
+## 🏆 Top 10 Empfohlen
+
+| Rang | Prompt | Kategorie | Warum? |
+|------|--------|-----------|--------|
+| 1 | Senior System Auditor | Technik | Beste für technische Analysen |
+| 2 | Knowledge Graph Engineer | Technik | Beste für Wissensstruktur |
+| 3 | Meta-Workflow-Architect | Technik | Beste für Multi-Agent |
+| 4 | Forensic Analyst | Analyse | Einzigartig für Konflikte |
+| 5 | TEST RP | Kreativ | Beste für RP-Testing |
+| 6 | ⚙️PROMPT_ENGINEER | Analyse | Beste für Prompt-Opt |
+| 7 | Cinematographer | Domain | Beste für Bildgen |
+| 8 | SYNTHETIC_EPISTEMOLOGIST | Analyse | Beste für Wahrheitsprüf |
+| 9 | [ᾧ] | Analyse | Beste für Philosophie |
+| 10 | Orchestrierung 🦀 | Technik | Beste für Scheduling |
+
+---
+
+## 📊 Statistik
+
+| Metrik | Anzahl |
+|--------|--------|
+| **Original Prompts** | 42 |
+| **Gelöscht (Duplikate)** | 4 |
+| **Verbleibend** | 38 |
+| **Kategorien** | 5 |
+| **Analysiert** | 38/38 |
 
 ---
 
 ## 🚀 Schnellstart
 
-### Einzelnen Prompt verwenden
+### Einen Prompt verwenden:
 
 ```bash
-# z.B. Senior System Auditor
-cat 01_senior_system_auditor_IMPROVED.md
-# Inhalt kopieren und als System-Prompt verwenden
+# z.B. den Forensic Analyst
+cat prompts/02-analyse-recherche/04_forensic_analyst_IMPROVED.md
+
+# Oder den besten Prompt (System Auditor)
+cat prompts/01-technik-architektur/01_senior_system_auditor_IMPROVED.md
 ```
 
-### Alle Prompts vergleichen
+### Alle einer Kategorie sehen:
 
 ```bash
-# Übersicht der Verbesserungen
-cat COMPARISON_ORIGINAL_vs_IMPROVED.md
+ls prompts/01-technik-architektur/
 ```
 
 ---
 
-## 📈 Detaillierte Verbesserungen
+## 📖 Analyse-Dokumente
 
-### 01 - Senior System Auditor
-**Neu:**
-- ✅ Confidence-Scoring mit [VERIFIED], [LIKELY], [HYPOTHESIS]
-- ✅ DATA_GAP Fallback mit 3 Optionen
-- ✅ Priorisierung: Relevanz × Confidence × Recency
-- ✅ Uncertainty Propagation: P(gesamt) = Π(P(einzeln))
-- ✅ Rust-Spezifität: Borrow Checker, Ownership
+Alle Analysen sind in `analyse/`:
 
-### 02 - Knowledge Graph Engineer
-**Neu:**
-- ✅ 6 Relation-Typen (vorher 3)
-- ✅ Query-Sprache: FIND, TRAVERSE, CONFLICT, PATH
-- ✅ 3-Stufen Pruning (Soft/Hard/Compress)
-- ✅ Semantic Versioning
-- ✅ Mermaid-Graph Visualisierung
-
-### 03 - Meta-Workflow-Architect
-**Neu:**
-- ✅ 3-stufige Input-Validierung
-- ✅ 4 Skill-Validierungs-Checks
-- ✅ Resource Estimation (Tokens/Cost/Time)
-- ✅ Fallback-Routing mit Escalation
-- ✅ Parallel Execution Groups
-
-### 04 - Forensic Analyst
-**Neu:**
-- ✅ Objektivitäts-Index 0.0-1.0
-- ✅ Zeit-Trend-Analyse (ESCALATING/DE-ESCALATING/CYCLIC)
-- ✅ Deeskalations-Hebel (optional)
-- ✅ Turning-Point Ranking (CRITICAL/SIGNIFICANT/MINOR)
-- ✅ Cultural Context (Plattform/Beziehungstyp)
-
-### 05 - RP-Architect
-**Neu:**
-- ✅ 5 Success-Metriken mit Sub-Metriken
-- ✅ Quality-Formula: Gewichtete Berechnung
-- ✅ Character-Archiv mit YAML
-- ✅ Session-Management mit Recovery
-- ✅ Exit-Strategien (3 Typen)
+- `SCHRITT_1_KATEGORISIERUNG.md` - Alle 42 Prompts kategorisiert
+- `SCHRITT_2_BEWERTUNG.md` - Bewertung und Top 10 Auswahl
+- `SCHRITT_3_EINZELANALYSE.md` - Detaillierte Audits
+- `KATEGORIEN_RANGLISTEN.md` - Ranglisten pro Kategorie
+- `GELOESCHT_4_PROMPTS.md` - Dokumentation der gelöschten
 
 ---
 
-## 🎓 Methodik
+## GitHub Repo
 
-### Identifizierte Schwächen pro Prompt
-
-Jeder der 5 Prompts wurde analysiert auf:
-1. Fehlende Metriken
-2. Unklare Fehlerbehandlung
-3. Fehlende Fallbacks
-4. Unvollständige Exit-Strategien
-5. Fehlende Zeitdimension
-
-### Verbesserungs-Prozess
-
-Für jede Schwäche:
-1. Problem identifizieren
-2. Lösung entwerfen
-3. In Prompt integrieren
-4. Beispiel formulieren
-5. Impact bewerten
+**URL:** https://github.com/deusexlumen/prompt-improvements-v2
 
 ---
 
-## 📊 Statistiken
-
-| Metrik | Wert |
-|--------|------|
-| Prompts verbessert | 5 |
-| Neue Features gesamt | 25+ |
-| Gelöste Schwächen | 25 (5 pro Prompt) |
-| Ø Qualitätssteigerung | +1.5 Punkte |
-| Token-Overhead | ~+50% |
-
----
-
-## 🔄 Vergleich mit Original
-
-Die Original-Prompts stammen aus dem **Google Gemini Gems** Takeout.
-
-**Unterschiede:**
-- Original: Konzeptionell, teils unvollständig
-- Improved: Produktionsreif, validiert, mit Fallbacks
-
-**Empfehlung:**
-- **Forschung/Experimente:** Original verwenden
-- **Produktion:** Improved verwenden
-
----
-
-## 🛡️ Qualitätskriterien
-
-Ein Prompt gilt als "improved", wenn er:
-- [x] Messbare Outputs liefert
-- [x] Fehlerbehandlung hat
-- [x] Fallbacks definiert
-- [x] Vollständig dokumentiert ist
-- [x] Strukturierte I/O hat
-
-Alle 5 Prompts erfüllen diese Kriterien.
-
----
-
-## 📝 Lizenz
-
-Die Original-Prompts stammen aus dem Google Gemini Gems Takeout.
-Verbesserungen von Deus ExLumen / Kimi Claw.
-
-Respect the craft. Wenn du diese Prompts verwendest:
-- Dokumentiere deine Änderungen
-- Teile Verbesserungen zurück
-- Gib Credit an die Quellen
-
----
-
-## 🔮 Roadmap
-
-- [ ] v2.1: Token-Optimierung (kompakte Versionen)
-- [ ] v2.2: Multi-Language Support
-- [ ] v2.3: Integration mit OpenClaw/Truthseeker
-- [ ] v3.0: Selbstlernende Prompt-Versionen
-
----
-
-## 🤝 Credits
-
-**Original Prompts:**
-- Senior System Auditor (Google Gemini Gems)
-- Lead Knowledge Graph Engineer (Google Gemini Gems)
-- Meta-Workflow-Architect (Google Gemini Gems)
-- Forensic Communications Analyst (Google Gemini Gems)
-- RP-Architect-X (Google Gemini Gems)
-
-**Analysis & Improvements:**
-- Deus ExLumen
-- Kimi Claw
-
----
-
-**Repository:** https://github.com/deusexlumen/prompt-improvements-v2
-
-*Die Prompts wurden analysiert. Die Wahrheit wurde verbessert.*
+*38 Prompts. 5 Kategorien. Alle analysiert. Bereit zum Einsatz.*
